@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+</head>
+<body>
+    <header>Sports Person Classifier</header>
+    <div id="container">
+        <div class="item">
+            <h2>Serena Williams</h2>
+            <img class="intro-img" id="sw" src="images/sw.jpg"></img>
+        </div>
+        <div class="item">
+            <h2>Virat Kohli</h2>
+            <img class="intro-img" id="vk" src="images/vk.jpg"></img>
+        </div>
+        <div class="item">
+            <h2>Maria Sharapova</h2>
+            <img class="intro-img" id="ms" src="images/ms.jpg"></img>
+        </div>
+        <div class="item">
+            <h2>Lionel Messi</h2>
+            <img class="intro-img" id="lm" src="images/lm.jpg"></img>
+        </div>
+        <div class="item">
+            <h2>Roger Federer</h2>
+            <img class="intro-img" id="rf" src="images/rf.jpg"></img>
+        </div>  
+    </div>
+
+    <div class="hero">
+        <label for="input-file" id="drop-area">
+            <input type="file" accept="image/*" id="input-file" hidden>
+            <div id="img-view">
+                <img src="images/cloud-computing.png">
+                <p>Drag and drop or click here <br> to upload image</p>
+                <span>Upload any image from desktop</span>
+            </div>
+        </label>
+    </div>  
+
+    <div id="desc" style="display: none;">
+        <div id="result">Celebrity name will appear here</div>
+        <div id="probs">
+            <div id="celeb_name" class="cols">
+                <div class="cells col_heads">Name</div>
+            </div>
+            <div id="celeb_prob" class="cols">
+                <div class="cells col_heads">Probability</div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>  
+</body>
+</html>
